@@ -1,0 +1,48 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#85bb65"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="start"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp">
+
+        <ImageButton
+            android:id="@+id/backbutton"
+            android:layout_width="20pt"
+            android:layout_height="20pt"
+            android:background="@drawable/ic_action_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Help Page"
+            android:textColor="#808080"
+            android:textSize="20pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="\nThis app is used to detect counterfeit bills using AI. \n\nTo use it, please either take a photo or select one from your gallery. \n\nPress the back button on the top left to exit this page. \n\nIMPORTANT NOTE: When selecting or taking a picture, please include the entire bill in the image."
+            android:textColor="#808080"
+            android:textSize="10pt" />
+
+    </LinearLayout>
+
+</LinearLayout>

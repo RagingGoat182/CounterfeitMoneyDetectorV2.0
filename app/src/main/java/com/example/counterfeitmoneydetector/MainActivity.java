@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         ImageButton helpbutton = (ImageButton) findViewById(R.id.helpbutton);
         helpbutton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
+                openActivityHelp();
             }
         });
     }
@@ -51,6 +51,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void openActivityGallery(){
         Intent intent = new Intent(this, GalleryActivity.class);
+        startActivity(intent);
+    }
+    public void openActivityHelp(){
+        Intent intent = new Intent(this, HelpActivity.class);
         startActivity(intent);
     }
 }
